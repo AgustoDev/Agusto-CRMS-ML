@@ -1,0 +1,8 @@
+* {
+  font-family: "Gordita";
+  font-weight: 500;
+}
+
+.animated {
+  transition: all 0.35s;
+}
