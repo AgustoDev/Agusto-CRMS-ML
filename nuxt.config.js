@@ -1,13 +1,10 @@
 module.exports = {
   mode: "universal",
-  /*
-   ** Headers of the page
-   */
+  server: {
+    host: "0.0.0.0",
+    port: process.env.PORT || 2000
+  },
   head: {
-    server: {
-      host: "0.0.0.0",
-      port: process.env.PORT || 3000
-    },
     title: process.env.npm_package_name || "",
     meta: [
       { charset: "utf-8" },
@@ -24,6 +21,7 @@ module.exports = {
    ** Customize the progress-bar color
    */
   loading: { color: "#fff" },
+  serverMiddleware: ["~/server/app"],
   /*
    ** Global CSS
    */
